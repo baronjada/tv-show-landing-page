@@ -17,6 +17,22 @@
       rel="stylesheet"
     />
     <style>
+      h1 {
+        font-size: 45px;
+        padding: 16px;
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        font-size: 22px;
+        margin: 18px;
+        padding: 12px;
+      }
+
+      .header-message {
+        margin: 15px;
+      }
+
       h1,
       h2,
       .built-footer {
@@ -30,6 +46,17 @@
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-style: normal;
+        font-size: 16px;
+        margin: 30px;
+      }
+
+      .contrast-text {
+        color: #455d7a;
+      }
+
+      .container {
+        max-width: 750px;
+        margin: 0 auto;
       }
 
       body {
@@ -41,20 +68,56 @@
         font-family: "Protest Revolution", sans-serif;
         font-weight: 400;
         font-style: normal;
+        font-size: 20px;
       }
 
       .murder-title,
       a {
         color: #f95959;
       }
+
+      button {
+        border: none;
+        border-radius: 12px;
+        padding: 10px 25px;
+        background: #233142;
+        color: #ffffff;
+      }
+
+      button:hover {
+        background: #455d7a;
+        color: #f95959;
+        cursor: pointer;
+      }
+
+      .built-footer {
+        font-size: 14px;
+      }
+
+      .main-image {
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      .image-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+      }
+
+      .image-gallery img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
     </style>
   </head>
   <body>
-    <div>
+    <div class="container">
       <header>
         <h1>How To Get Away With <span class="murder-title">Murder</span></h1>
-        <p>
-          Don't worry, this page doesn't contain the info you think it does!
+        <p class="header-message">
+          (Don't worry, this page doesn't contain the info you think it does!)
         </p>
         <h2>
           It's just a TV show, but not any TV show, it's the best and most
@@ -62,14 +125,35 @@
         </h2>
       </header>
       <main>
+        <img
+          class="main-image"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/256/original/htgawm-6.jpg?1707842700"
+        />
         <p>
-          How to Get Away with Murder is an American legal drama thriller
-          television series that premiered on ABC on September 25, 2014, and
-          concluded on May 14, 2020. The series was created by Peter Nowalk, and
-          produced by Shonda Rhimes and ABC Studios. The series aired on ABC as
-          part of a night of programming, all under Rhimes' Shondaland
-          production company.
+          <strong class="contrast-text">How to Get Away with Murder</strong>
+          is an American legal drama thriller television series that premiered
+          on ABC on September 25, 2014, and concluded on May 14, 2020. The
+          series was created by Peter Nowalk, and produced by Shonda Rhimes and
+          ABC Studios. The series aired on ABC as part of a night of
+          programming, all under Rhimes' Shondaland production company.
         </p>
+        <div class="image-gallery">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/251/original/htgawm-2.jpg?1707842069"
+          />
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/253/original/htgawm-4.jpg?1707842100"
+          />
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/254/original/htgawm-5.jpg?1707842106"
+          />
+          <div>
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/255/original/htgawm-1.jpg?1707842148"
+            />
+          </div>
+        </div>
+
         <p>
           Viola Davis stars as Annalise Keating, a defense attorney and law
           professor at a prestigious Philadelphia university who, along with
